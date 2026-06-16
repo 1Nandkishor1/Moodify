@@ -1,8 +1,8 @@
 import axios from "axios";
-let api=axios.create({
-    baseURL:"http://localhost:3000/api/auth",
-    withCredentials:true
-})
+app.use(cors({
+  origin: "https://moodify-9h9y.onrender.com",
+  credentials: true,
+}));
 
 export async function registerUser(username,email,password){
     try {

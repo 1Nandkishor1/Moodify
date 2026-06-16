@@ -6,8 +6,8 @@ app.use(express.json())
 app.use(cookie())
 let cors=require('cors');
 app.use(cors({
-    credentials:true,
-    origin:"http://localhost:5173"
+  credentials: true,
+  origin: "https://moodify-9h9y.onrender.com",
 }));
 
 let userroute=require('./routes/user.route')

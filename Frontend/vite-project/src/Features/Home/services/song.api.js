@@ -1,9 +1,9 @@
 import axios from "axios";
 
-let api=axios.create({
-    baseURL:"http://localhost:3000/api/song",
-    withCredentials:true
-})
+const api = axios.create({
+  baseURL: "https://moodify-9h9y.onrender.com/api/song",
+  withCredentials: true,
+});
 
 export async function getsong(mood){
     let res=await api.get("/get?mood="+mood)
