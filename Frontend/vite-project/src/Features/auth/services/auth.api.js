@@ -1,6 +1,6 @@
 import axios from "axios";
 let api=axios.create({
-    baseURL:"https://moodify-9h9y.onrender.com//api/auth",
+    baseURL:"https://moodify-9h9y.onrender.com/api/auth",
     withCredentials:true
 })
 
